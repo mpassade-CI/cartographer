@@ -1,7 +1,53 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-
+const triple = function(num){
+  return num*3
+}
+const tripleAll = function(nums){
+  return nums.map(triple)
+}
+const getNegativeValue = function(num){
+  return num>0 ? num*(-1) : num
+}
+const negativeValues = function(nums){
+  return nums.map(getNegativeValue)
+}
+const makeQuestion = function(str){
+  return str+'?'
+}
+const questionings = function(arr){
+  return arr.map(makeQuestion)
+}
+const getInitials = function(str){
+  return str.split(' ')[0][0] + str.split(' ')[1][0]
+}
+const changeToInitials = function(arr){
+  return arr.map(getInitials)
+}
+const doubleIfEven = function(num){
+  return num%2===0 ? num*2 : num
+}
+const doubleEven = function(nums){
+  return nums.map(doubleIfEven)
+}
+const cases = function(x,i,arr){
+  arr[i] = x[0].toUpperCase()+x.slice(1,x.length).toLowerCase()
+}
+const cases2 = function(str){
+  let arr = str.split(' ')
+  arr.forEach(cases)
+  return arr.join(' ')
+}
+const titleCaseNames = function(arr){
+  return arr.map(cases2)
+}
+const double = function(num,i){
+  return i%2!==0 ? num*2 : num
+}
+const doubleEveryOther = function(nums){
+  return nums.map(double)
+}
 
 
 
